@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
@@ -167,101 +167,168 @@
     </head>
 
     <body>
-        <header>
-            <img
-                src="/img/covid.png"
-                class="header-img"
-                alt="Contra el COVID-19"
-            />
-        </header>
-
         <main>
-            <div class="container">
+            <div class="container hero-card">
                 <img
                     src="/img/logo.png"
-                    class="container-img"
+                    class="container-img logo-img"
                     alt='Insignia del E.T. "Francisco Fajardo"'
                 />
 
                 <h1 class="container-title">E.T. "Francisco Fajardo"</h1>
 
-                <h3 class="container-description">
+                <p class="container-description">
                     Formamos estudiantes con miras al éxito de un país
                     productivo
-                </h3>
+                </p>
 
                 <div class="container-links">
                     <a
                         href="https://franciscofajardo.com/actividades/"
-                        class="btn"
+                        class="btn btn-primary"
                     >
                         Actividades
                     </a>
 
-                    <a href="https://franciscofajardo.com/notas/" class="btn">
+                    <a
+                        href="https://franciscofajardo.com/notas/"
+                        class="btn btn-secondary"
+                    >
                         Notas
                     </a>
                 </div>
             </div>
         </main>
 
-        <aside>
-            <div class="container">
-                <h3 class="container-title">¿Cómo protegerse del COVID-19?</h3>
-
-                <img
-                    src="/img/consejos-de-prevencion-para-el-covid-19.jpg"
-                    class="container-img"
-                    alt="Consejos de prevención para el COVID-19"
-                />
-
-                <div class="container-links">
-                    <a
-                        href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses"
-                        class="btn"
-                    >
-                        Más información
-                    </a>
+        <footer class="footer">
+            <div class="container footer-card">
+                <div class="footer-header">
+                    <h2 class="footer-title">Contacto & Redes</h2>
+                    <p class="footer-subtitle">
+                        Comunícate con la institución y síguenos en nuestros
+                        canales oficiales
+                    </p>
                 </div>
-            </div>
-        </aside>
 
-        <footer>
-            <div class="container">
-                <h3 class="container-title">Contacto</h3>
+                <div class="footer-channels">
+                    <a
+                        href="mailto:contacto@franciscofajardo.com"
+                        class="channel-card"
+                        title="Enviar correo"
+                    >
+                        <span class="channel-icon" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    width="20"
+                                    height="16"
+                                    x="2"
+                                    y="4"
+                                    rx="2"
+                                ></rect>
+                                <path
+                                    d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                ></path>
+                            </svg>
+                        </span>
+                        <div class="channel-info">
+                            <span class="channel-name"
+                                >Correo Institucional</span
+                            >
+                            <span class="channel-detail"
+                                >contacto@franciscofajardo.com</span
+                            >
+                        </div>
+                    </a>
 
-                <div class="container-links">
                     <a
                         href="https://www.facebook.com/groups/555209544587295"
-                        class="social-btn"
-                        title="Facebook"
+                        class="channel-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Grupo de Facebook"
                     >
-                        <img src="/img/social/facebook.png" alt="Facebook" />
+                        <span class="channel-icon" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <div class="channel-info">
+                            <span class="channel-name">Facebook</span>
+                            <span class="channel-detail"
+                                >Comunidad oficial</span
+                            >
+                        </div>
                     </a>
 
                     <a
                         href="https://twitter.com/francis90515194"
-                        class="social-btn"
-                        title="Twitter"
+                        class="channel-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Twitter / X"
                     >
-                        <img src="/img/social/twitter.png" alt="Twitter" />
+                        <span class="channel-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                />
+                            </svg>
+                        </span>
+                        <div class="channel-info">
+                            <span class="channel-name">Twitter / X</span>
+                            <span class="channel-detail">@francis90515194</span>
+                        </div>
                     </a>
 
                     <a
                         href="https://github.com/francisco-fajardo"
-                        class="social-btn"
+                        class="channel-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         title="GitHub"
                     >
-                        <img src="/img/social/github.png" alt="GitHub" />
+                        <span class="channel-icon" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                                ></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </span>
+                        <div class="channel-info">
+                            <span class="channel-name">GitHub</span>
+                            <span class="channel-detail"
+                                >francisco-fajardo</span
+                            >
+                        </div>
                     </a>
+                </div>
 
-                    <a
-                        href="mailto:contacto@franciscofajardo.com"
-                        class="social-btn"
-                        title="Correo"
-                    >
-                        <img src="/img/social/correo.png" alt="Correo" />
-                    </a>
+                <div class="footer-bottom">
+                    <p>© 2026 E.T. "Francisco Fajardo" · Caricuao, Caracas</p>
                 </div>
             </div>
         </footer>

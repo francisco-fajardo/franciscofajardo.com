@@ -1,5 +1,5 @@
 # Stage 1: Build assets
-FROM node:14-alpine as builder
+FROM node:20-alpine as builder
 WORKDIR /assets
 
 # Copy the package.json and install dependencies

@@ -1,9 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -14,6 +13,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "js/dist/[name].js",
         publicPath: "/",
+        clean: true,
     },
     module: {
         rules: [
@@ -37,16 +37,11 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                loader: "file-loader",
-                options: {
-                    outputPath: "../../img",
-                    name: "[name].[ext]",
-                },
+                type: "asset/resource",
             },
         ],
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "src/views/index.html",
@@ -62,7 +57,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/dist/[name].css",
         }),
-        new OptimizeCssAssetsPlugin({}),
         new CopyPlugin({
             patterns: [
                 {
@@ -73,6 +67,7 @@ module.exports = {
         }),
     ],
     optimization: {
+        minimizer: ["...", new CssMinimizerPlugin()],
         runtimeChunk: "single",
         splitChunks: {
             cacheGroups: {
